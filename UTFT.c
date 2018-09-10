@@ -704,8 +704,8 @@ void UTFT_setBackColor(uint32_t color)
 		UTFT__transparent=true;
 	else
 	{
-		UTFT_bch=(byte) color>>8;
-		UTFT_bcl=(byte) color & 0xFF;
+		UTFT_bch=(byte) (color>>8);
+		UTFT_bcl=(byte) (color & 0xFF);
 		UTFT__transparent=false;
 	}
 }
